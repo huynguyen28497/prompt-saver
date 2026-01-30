@@ -1,8 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prompt Library
+
+Capture, organize, and reuse your best AI prompts with context, tags, and image-to-text extraction. Supports login/register with prompts stored per account in PostgreSQL.
 
 ## Getting Started
 
-First, run the development server:
+1. Copy `.env.example` to `.env.local` and fill in:
+   - `POSTGRES_URL` – PostgreSQL connection string (e.g. `postgresql://user:pass@host/db?sslmode=require`)
+   - `NEXTAUTH_URL` – App URL (e.g. `http://localhost:3000`)
+   - `NEXTAUTH_SECRET` – Random secret (run `openssl rand -base64 32`)
+
+2. Run the development server:
 
 ```bash
 npm run dev
