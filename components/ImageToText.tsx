@@ -60,6 +60,7 @@ export function ImageToText({
     setLoading(true);
     setProgress(0);
     setError(null);
+    
     try {
       const worker = await createWorker(language, 1, {
         logger: (m) => {
